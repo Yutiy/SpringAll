@@ -1,0 +1,32 @@
+table {
+    table-layout: auto;
+    margin: 20px 40px 20px 0;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    word-wrap: break-all;
+}
+
+table > tbody > tr:nth-of-type(odd) {
+    background-color: #F7F7F7
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+    border-bottom: 1px solid #fff;
+}
+
+th {
+    padding-bottom: 10px;
+    color: #fff;
+    font-weight: 700;
+    background: rgba(66, 185, 131, .9)
+}
+
+td {
+    border-bottom-width: 1px
+}
