@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
  * Author: yutiy
  * Date: 2020/11/19 12:25
  * Email: 494657028@qq.com
+ *
+ * 加上 @Configuration 或者 @component 就可以不加 @EnableConfigurationProperties({TestConfigBean.class}) 了
  */
 @Configuration
 @ConfigurationProperties(prefix="test")

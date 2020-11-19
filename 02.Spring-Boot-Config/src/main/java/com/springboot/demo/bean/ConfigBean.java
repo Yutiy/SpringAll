@@ -6,6 +6,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * Author: yutiy
  * Date: 2020/11/19 12:16
  * Email: 494657028@qq.com
+ *
+ * 加上 @Configuration 或者 @component 就可以不加 @EnableConfigurationProperties({ConfigBean.class}) 了
  */
 @ConfigurationProperties(prefix = "yutiy.blog")
 public class ConfigBean {
