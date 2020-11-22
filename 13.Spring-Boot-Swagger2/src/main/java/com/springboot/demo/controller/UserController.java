@@ -34,8 +34,7 @@ public class UserController {
     @ApiOperation(value = "获取用户信息", notes = "根据用户id获取用户信息")
     @ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "Long", paramType = "path")
     @GetMapping("/{id}")
-    public @ResponseBody
-    User getUserById(@PathVariable(value = "id") Long id) {
+    public @ResponseBody User getUserById(@PathVariable(value = "id") Long id) {
         User user = new User();
         user.setId(id);
         user.setName("yutiy");
@@ -45,8 +44,7 @@ public class UserController {
 
     @ApiOperation(value = "获取用户列表", notes = "获取用户列表")
     @GetMapping("/list")
-    public @ResponseBody
-    List<User> getUserList() {
+    public @ResponseBody List<User> getUserList() {
         List<User> list = new ArrayList<>();
         User user1 = new User();
         user1.setId(1l);

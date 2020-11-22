@@ -1,0 +1,18 @@
+server:
+  port: 80
+
+management:
+  endpoints:
+    web:
+      base-path: /monitor #actuator的访问路径
+      exposure:
+        include: "*"
+  server:
+    port: 80
+    ssl:
+      enabled: false
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
