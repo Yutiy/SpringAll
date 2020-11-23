@@ -4,14 +4,6 @@ Spring Boot、Spring Boot & Shiro、Spring Cloud，Spring Boot & Spring Security
 
 ## Spring Boot教程
 
-## Spring Boot & Shiro教程
-
-## Spring Boot & Security教程
-
-## Spring Cloud教程
-
-## Spring Boot && Dubbo教程
-
-## Spring Boot && Spring Batch教程
-
-## Spring
+1. [Spring Boot logback日志配置](https://mrbird.cc/Spring-Boot-logback.html)
+2. [Linux下部署Spring Boot jar](https://mrbird.cc/Linux%20Spring-Boot-jar.html)
+3. [Spring Boot中使用Jsoup防御XSS攻击](https://mrbird.cc/Jsoup%20XSS.html)
