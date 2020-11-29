@@ -1,5 +1,6 @@
 package com.springboot.demo.security;
 
+import com.springboot.demo.handler.MyAuthenticationAccessDeniedHandler;
 import com.springboot.demo.handler.MyAuthenticationFailureHandler;
 import com.springboot.demo.handler.MyAuthenticationSuccessHandler;
 import com.springboot.demo.handler.MyLogOutSuccessHandler;
@@ -35,6 +36,9 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private MyAuthenticationFailureHandler authenticationFailureHandler;
+
+    @Autowired
+    private MyAuthenticationAccessDeniedHandler authenticationAccessDeniedHandler;
 
     @Autowired
     private MyLogOutSuccessHandler logOutSuccessHandler;
@@ -106,6 +110,9 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
                     .logoutSuccessUrl("/signOut/success")
                     // .logoutSuccessHandler(logOutSuccessHandler)
                     .deleteCookies("JSESSIONID")
+                .and()
+                    .exceptionHandling()
+                        .accessDeniedHandler(authenticationAccessDeniedHandler)
                 .and()
                     .apply(smsAuthenticationConfig); // 将短信验证码认证配置加到 Spring Security 中
     }
