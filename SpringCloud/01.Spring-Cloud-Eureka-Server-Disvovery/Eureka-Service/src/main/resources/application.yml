@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: peer1
+
+  security:
+    user:
+      name: yutiy
+      password: 123456
